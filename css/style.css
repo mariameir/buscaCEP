@@ -1,7 +1,7 @@
 :root {
   --bg-color: #010A26;
-  --secondary-bg-color: #D9998B;
-  --primary-color: #fff;
+  --secondary-bg-color: #ca9f95;
+  --primary-color: #ffff;
   --secondary-color: #F27166;
   --text-color: #B8B8BF;
   --border-color: #2E3D59;
@@ -88,4 +88,10 @@
   position: absolute;
   top: 22.5px;
   width: 90%;
+  left: 5%;
+  z-index: -1;
+}
+
+#form-header p{
+  color: var(--text-color);
 }
