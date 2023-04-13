@@ -1,7 +1,7 @@
 :root {
   --bg-color: #010A26;
   --secondary-bg-color: #ca9f95;
-  --primary-color: #ffff;
+  --primary-color: #fff;
   --secondary-color: #F27166;
   --text-color: #B8B8BF;
   --border-color: #2E3D59;
@@ -47,6 +47,7 @@
 /* Steps */
 #order-form-container {
   padding: 1.5em;
+  max-width: 700px;
 }
 
 #steps {
@@ -91,7 +92,13 @@
   left: 5%;
   z-index: -1;
 }
-
-#form-header p{
+.form-header p{
   color: var(--text-color);
+}
+
+#order-form-container input,
+#order-form-container select{
+  background-color:#172347;
+  border:  2px solid var(--border-color);
+  color: var(--primary-color);
 }
