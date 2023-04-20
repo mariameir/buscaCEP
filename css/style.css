@@ -1,10 +1,10 @@
 :root {
-  --bg-color: #010A26;
-  --secondary-bg-color: #ca9f95;
+  --bg-color: #010126;
+  --secondary-bg-color: #52527d;
   --primary-color: #fff;
-  --secondary-color: #F27166;
-  --text-color: #B8B8BF;
-  --border-color: #2E3D59;
+  --secondary-color: #367e7e;
+  --text-color: #c8c9d1;
+  --border-color: #20235b;
 }
 
 #checkout-page {
@@ -47,7 +47,6 @@
 /* Steps */
 #order-form-container {
   padding: 1.5em;
-  max-width: 700px;
 }
 
 #steps {
@@ -75,16 +74,15 @@
   margin-bottom: 0.3em;
 }
 
-.step .active{
+.step .active {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
 }
 
-.step p{
+.step p {
   color: var(--text-color);
 }
 
-.line{
+.line {
   border-bottom: 1px solid var(--border-color);
   position: absolute;
   top: 22.5px;
@@ -92,13 +90,58 @@
   left: 5%;
   z-index: -1;
 }
-.form-header p{
+
+/* Form header */
+#form-header p {
   color: var(--text-color);
 }
 
+/* Form */
+#order-form-container {
+  max-width: 700px;
+}
+
 #order-form-container input,
-#order-form-container select{
-  background-color:#172347;
-  border:  2px solid var(--border-color);
+#order-form-container select {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
   color: var(--primary-color);
+}
+
+#order-form-container select {
+  padding: 1rem 0.75rem;
+}
+
+#order-form-container label {
+  color: var(--text-color);
+}
+
+#order-form-container input:disabled,
+#order-form-container select:disabled {
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+}
+
+#order-form-container input:focus {
+  border-color: var(--secondary-color);
+}
+
+#order-form-container .form-floating > label {
+  left: 1em;
+}
+
+#save-btn {
+  background-color: #0b712f;
+  border: none;
+  height: 3em;
+  width: 8em;
+  
+  
+}
+
+/* Responsive */
+@media (min-width: 500px) {
+  #save-btn {
+    width: 8em;
+  }
 }
